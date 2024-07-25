@@ -75,13 +75,13 @@ function Hero() {
         </p>
         <div className="flex flex-col gap-2 min-[400px]:flex-row">
           <Button size="lg" asChild>
-            <Link href="#" prefetch={false}>
+            <Link href="/dashboard" prefetch={false}>
               Get Started
             </Link>
           </Button>
 
           <Button size="lg" variant="outline" asChild>
-            <Link href="#" prefetch={false}>
+            <Link href="#features" prefetch={false}>
               Learn More
             </Link>
           </Button>
@@ -100,7 +100,10 @@ function Hero() {
 
 function Features() {
   return (
-    <section className="w-full py-12 md:py-24 bg-muted container px-4 md:px-6">
+    <section
+      id="features"
+      className="w-full py-12 md:py-24 bg-muted container px-4 md:px-6"
+    >
       <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-5">
         Features that Empower Your Workflow
       </h2>
@@ -136,13 +139,13 @@ function CTA() {
       </div>
       <div className="flex flex-col gap-2 min-[400px]:flex-row">
         <Button size="lg" asChild>
-          <Link href="#" prefetch={false}>
+          <Link href="/dashboard" prefetch={false}>
             Get Started
           </Link>
         </Button>
 
         <Button size="lg" variant="outline" asChild>
-          <Link href="#" prefetch={false}>
+          <Link href="#features" prefetch={false}>
             Learn More
           </Link>
         </Button>
